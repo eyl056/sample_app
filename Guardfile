@@ -39,8 +39,5 @@ guard :minitest do
   # watch(%r{^app/controllers/(.*)\.rb$}) { |m| "test/functional/#{m[1]}_test.rb" }
   # watch(%r{^app/helpers/(.*)\.rb$})     { |m| "test/helpers/#{m[1]}_test.rb" }
   # watch(%r{^app/models/(.*)\.rb$})      { |m| "test/unit/#{m[1]}_test.rb" }
-<<<<<<< HEAD
-=======
   # new commit file
->>>>>>> static-pages
 end
