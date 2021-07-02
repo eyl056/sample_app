@@ -8,7 +8,9 @@ gem 'rails', '6.1.3.2'
 gem 'image_processing', '1.9.3'
 gem 'mini_magick', '4.9.5'
 gem 'active_storage_validations', '0.8.9'
+gem 'faker', '~> 2.18'
 gem 'bcrypt', '3.1.13'
+
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
@@ -31,6 +33,9 @@ gem 'jbuilder', '2.10.0'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '1.7.2', require: false
+
+# gem 'i18n', '~> 0.5', '>= 1.6', '< 2'
+gem 'i18n', '>= 1.6'
 
 group :development, :test do
   gem 'sqlite3', '1.4.2'
