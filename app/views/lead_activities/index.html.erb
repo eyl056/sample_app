@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lead Activities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lead activity</th>
+      <th>Activity type</th>
+      <th>Created by</th>
+      <th>Created at</th>
+      <th>Lead notes content</th>
+      <th>Lead email group</th>
+      <th>Lead email order</th>
+      <th>Lead email order</th>
+      <th>Lead email thread number</th>
+      <th>Lead email from</th>
+      <th>Lead email to</th>
+      <th>Lead email title</th>
+      <th>Lead email content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lead_activities.each do |lead_activity| %>
+      <tr>
+        <td><%= lead_activity.lead_activity_id %></td>
+        <td><%= lead_activity.activity_type_id %></td>
+        <td><%= lead_activity.created_by %></td>
+        <td><%= lead_activity.created_at %></td>
+        <td><%= lead_activity.lead_notes_content %></td>
+        <td><%= lead_activity.lead_email_group_id %></td>
+        <td><%= lead_activity.lead_email_order %></td>
+        <td><%= lead_activity.lead_email_order %></td>
+        <td><%= lead_activity.lead_email_thread_number %></td>
+        <td><%= lead_activity.lead_email_from %></td>
+        <td><%= lead_activity.lead_email_to %></td>
+        <td><%= lead_activity.lead_email_title %></td>
+        <td><%= lead_activity.lead_email_content %></td>
+        <td><%= link_to 'Show', lead_activity %></td>
+        <td><%= link_to 'Edit', edit_lead_activity_path(lead_activity) %></td>
+        <td><%= link_to 'Destroy', lead_activity, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lead Activity', new_lead_activity_path %>

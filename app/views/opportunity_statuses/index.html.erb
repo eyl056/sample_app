@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Opportunity Statuses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Opportunity status</th>
+      <th>Oppotunity status name</th>
+      <th>Process</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @opportunity_statuses.each do |opportunity_status| %>
+      <tr>
+        <td><%= opportunity_status.opportunity_status_id %></td>
+        <td><%= opportunity_status.oppotunity_status_name %></td>
+        <td><%= opportunity_status.process %></td>
+        <td><%= link_to 'Show', opportunity_status %></td>
+        <td><%= link_to 'Edit', edit_opportunity_status_path(opportunity_status) %></td>
+        <td><%= link_to 'Destroy', opportunity_status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Opportunity Status', new_opportunity_status_path %>

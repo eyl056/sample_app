@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lead_status_id: 1
+  lead_status_name: potential
+  organization_id: 1
+
+two:
+  lead_status_id: 2
+  lead_status_name: potential
+  organization_id: 2

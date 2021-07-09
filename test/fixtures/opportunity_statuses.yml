@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  opportunity_status_id: 1
+  oppotunity_status_name: INBOX
+  process: WON
+
+two:
+  opportunity_status_id: 2
+  oppotunity_status_name: NEXTINLINE
+  process: WON

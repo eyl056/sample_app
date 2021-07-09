@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Opportunity status:</strong>
+  <%= @opportunity_status.opportunity_status_id %>
+</p>
+
+<p>
+  <strong>Oppotunity status name:</strong>
+  <%= @opportunity_status.oppotunity_status_name %>
+</p>
+
+<p>
+  <strong>Process:</strong>
+  <%= @opportunity_status.process %>
+</p>
+
+<%= link_to 'Edit', edit_opportunity_status_path(@opportunity_status) %> |
+<%= link_to 'Back', opportunity_statuses_path %>

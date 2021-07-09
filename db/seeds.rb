@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Organization.create!(
+             organization_id: 1,
+             organization_name: 'orga1',
+             password_confirmation: 'foobar',
+             created_at: Time.zone.now,
+             updated_at: Time.zone.now
+             )
+             
